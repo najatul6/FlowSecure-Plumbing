@@ -4,6 +4,7 @@ import ServicesSection from '../../Components/Home/ServiceSection'
 import AboutSection from '../../Components/Home/AboutSection'
 import TestimonialsSection from '../../Components/Home/TestimonialsSection'
 import CTASection from '../../Components/Home/CTASection'
+import ContactSection from '../../Components/Home/ContactSection'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <AboutSection/>
         <TestimonialsSection/>
         <CTASection/>
+        <ContactSection/>
     </div>
   )
 }
