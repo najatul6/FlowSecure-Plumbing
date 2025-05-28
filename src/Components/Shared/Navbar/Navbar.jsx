@@ -14,42 +14,37 @@ const Navbar = () => {
     { label: "Contact", path: "/contact" },
   ];
 
+  const closeMenu = () => setMobileMenuOpen(false);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="navbar-header">
+      <div className="navbar-container">
         <motion.h1
           whileHover={{ scale: 1.05, color: "#2563EB" }}
-          className="text-2xl font-bold text-blue-800 tracking-wide cursor-pointer"
+          className="navbar-brand"
         >
           FlowSecure
         </motion.h1>
 
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-8 items-center">
+        <nav className="navbar-links">
           {navLinks.map(({ label, path }) => (
             <NavLink
               key={label}
               to={path}
               className={({ isActive }) =>
-                `text-base font-medium transition-all duration-300 ${
-                  isActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600"
-                }`
+                `nav-link${isActive ? " active" : ""}`
               }
             >
               {label}
             </NavLink>
           ))}
-          <NavLink
-            to="/contact"
-            className="ml-4 bg-blue-600 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition"
-          >
+          <NavLink to="/contact" className="quote-btn">
             Get a Quote
           </NavLink>
         </nav>
 
-        {/* Mobile Toggle */}
         <button
-          className="md:hidden"
+          className="menu-toggle"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -57,7 +52,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -66,18 +60,16 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white/95 shadow-inner px-6 py-4 rounded-b-xl"
+            className="mobile-menu"
           >
-            <ul className="space-y-3">
+            <ul className="mobile-nav-list">
               {navLinks.map(({ label, path }) => (
                 <li key={label}>
                   <NavLink
                     to={path}
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={closeMenu}
                     className={({ isActive }) =>
-                      `block font-medium text-lg transition ${
-                        isActive ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
-                      }`
+                      `mobile-link${isActive ? " active" : ""}`
                     }
                   >
                     {label}
@@ -87,8 +79,8 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="block w-full text-center bg-blue-600 text-white mt-3 px-4 py-2 rounded-full font-medium hover:bg-blue-700 transition"
+                  onClick={closeMenu}
+                  className="mobile-quote-btn"
                 >
                   Get a Quote
                 </NavLink>
