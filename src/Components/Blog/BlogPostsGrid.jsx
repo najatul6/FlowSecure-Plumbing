@@ -33,19 +33,19 @@ const BlogPostsGrid = () => {
           date: "January 5, 2025",
         },
         {
-          image: "https://cdn.pixabay.com/photo/2016/09/08/11/52/plumber-1651423_1280.jpg",
+          image: "https://cdn.pixabay.com/photo/2017/08/23/10/22/tubing-2672187_960_720.jpg",
           title: "What to Do During a Plumbing Emergency",
           summary: "Stay calm and follow this guide to minimize water damage.",
           date: "December 12, 2024",
         },
         {
-          image: "https://cdn.pixabay.com/photo/2016/08/27/22/21/hands-1626757_1280.jpg",
+          image: "https://cdn.pixabay.com/photo/2017/07/28/00/43/plumber-2547329_1280.jpg",
           title: "How to Choose the Right Plumber",
           summary: "What to look for before hiring a plumbing service provider.",
           date: "November 8, 2024",
         },
         {
-          image: "https://cdn.pixabay.com/photo/2017/05/10/22/20/clean-2304469_1280.jpg",
+          image: "https://cdn.pixabay.com/photo/2017/08/23/10/22/pipes-2672184_1280.jpg",
           title: "Water-Saving Plumbing Upgrades",
           summary: "Eco-friendly fixtures that save money and the environment.",
           date: "October 25, 2024",
