@@ -40,7 +40,7 @@ const Navbar = () => {
             </NavLink>
           ))}
           <NavLink
-            to="/contact"
+            to="/getaquote"
             className="ml-4 bg-blue-600 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition"
           >
             Get a Quote
@@ -87,7 +87,7 @@ const Navbar = () => {
               ))}
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/getaquote"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block w-full text-center bg-blue-600 text-white mt-3 px-4 py-2 rounded-full font-medium hover:bg-blue-700 transition"
                 >
