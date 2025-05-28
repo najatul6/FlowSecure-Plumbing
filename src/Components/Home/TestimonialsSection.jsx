@@ -24,7 +24,7 @@ const testimonials = [
 const TestimonialsSection = () => {
   return (
     <section className="bg-gray-50 py-16 px-4">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="w-full mx-auto text-center">
         <h2 className="text-4xl font-bold text-blue-700 mb-10">What Our Customers Say</h2>
 
         <Swiper
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-8 rounded-xl shadow-md max-w-xl mx-auto">
+              <div className="bg-white p-8 rounded-xl shadow-md max-w-6xl mx-auto">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
