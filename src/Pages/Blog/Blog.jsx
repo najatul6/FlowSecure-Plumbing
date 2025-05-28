@@ -1,7 +1,12 @@
+import BlogHero from "../../Components/Blog/BlogHero"
+import BlogPostsGrid from "../../Components/Blog/BlogPostsGrid"
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div>
+      <BlogHero />
+      <BlogPostsGrid />
+      </div>
   )
 }
 
