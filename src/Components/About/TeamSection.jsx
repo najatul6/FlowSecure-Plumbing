@@ -10,6 +10,11 @@ const TeamSection = () => {
         role: "Customer Service",
         image: "https://randomuser.me/api/portraits/women/44.jpg",
       },
+      {
+        name: "Ahmed Karim",
+        role: "Lead Plumber",
+        image: "https://randomuser.me/api/portraits/men/32.jpg",
+      }
     ];
   
     return (
