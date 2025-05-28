@@ -21,7 +21,9 @@ const Navbar = () => {
           whileHover={{ scale: 1.05, color: "#2563EB" }}
           className="text-2xl font-bold text-blue-800 tracking-wide cursor-pointer"
         >
+          <NavLink to="/">
           FlowSecure
+          </NavLink>
         </motion.h1>
 
         {/* Desktop Menu */}
