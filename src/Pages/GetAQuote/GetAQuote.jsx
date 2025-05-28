@@ -1,7 +1,14 @@
+import QuoteContactInfo from "../../Components/Quote/QuoteContactInfo"
+import QuoteForm from "../../Components/Quote/QuoteForm"
+import QuoteHero from "../../Components/Quote/QuoteHero"
 
 const GetAQuote = () => {
   return (
-    <div>GetAQuote</div>
+    <main>
+    <QuoteHero />
+    <QuoteForm />
+    <QuoteContactInfo />
+  </main>
   )
 }
 
