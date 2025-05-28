@@ -6,6 +6,7 @@ import About from "../Pages/About/About"
 import Services from "../Pages/Services/Services"
 import Contact from "../Pages/Contact/Contact"
 import Blog from "../Pages/Blog/Blog"
+import GetAQuote from "../Pages/GetAQuote/GetAQuote"
 
 const Routes = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const Routes = createBrowserRouter([
             {
                 path:"blog",
                 element:<Blog/>
+            },
+            {
+                path:"getaquote",
+                element:<GetAQuote/>
             }
         ]
     },
