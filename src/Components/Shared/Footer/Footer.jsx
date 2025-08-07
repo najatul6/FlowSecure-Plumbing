@@ -1,3 +1,4 @@
+import {Link} from react-router-dom
 const Footer = () => {
     return (
       <footer className="bg-blue-900 text-white py-10 px-6">
@@ -33,7 +34,7 @@ const Footer = () => {
   
         {/* Bottom bar */}
         <div className="mt-10 border-t border-blue-700 pt-6 text-center text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} FlowSecure Plumbing. All rights reserved by - <a to="https://najatul-islam.vercel.app/" target="_blank" className="text-bold underline">Najatul Islam</a>.
+          &copy; {new Date().getFullYear()} FlowSecure Plumbing. All rights reserved by - <Link to="https://najatul-islam.vercel.app/" target="_blank" className="text-bold text-xl cursor-pointer underline">Najatul Islam</Link>.
         </div>
       </footer>
     );
