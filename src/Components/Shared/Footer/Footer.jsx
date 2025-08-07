@@ -33,7 +33,7 @@ const Footer = () => {
   
         {/* Bottom bar */}
         <div className="mt-10 border-t border-blue-700 pt-6 text-center text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} FlowSecure Plumbing. All rights reserved by - <Link to="https://najatul-islam.vercel.app/" target="_blank" className="text-bold underline">Najatul Islam</Link>.
+          &copy; {new Date().getFullYear()} FlowSecure Plumbing. All rights reserved by - <a to="https://najatul-islam.vercel.app/" target="_blank" className="text-bold underline">Najatul Islam</a>.
         </div>
       </footer>
     );
